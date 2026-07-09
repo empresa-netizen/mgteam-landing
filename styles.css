@@ -18,14 +18,35 @@
 
 html {
   scroll-behavior: smooth;
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
 }
 
 body {
+  position: relative;
+  width: 100%;
+  max-width: 100%;
   margin: 0;
   background: var(--paper);
   color: var(--ink);
   font-family: "Work Sans", Arial, sans-serif;
   line-height: 1.5;
+  overflow-x: hidden;
+  overscroll-behavior-x: none;
+  touch-action: pan-y;
+}
+
+body > * {
+  max-width: 100vw;
+}
+
+main,
+section,
+.site-header,
+.site-footer {
+  max-width: 100%;
   overflow-x: hidden;
 }
 
@@ -38,6 +59,7 @@ svg {
 a {
   color: inherit;
   text-decoration: none;
+  touch-action: manipulation;
 }
 
 ::selection {
@@ -636,10 +658,13 @@ cite {
 
   .hero-media {
     max-width: min(86vw, 360px);
+    overflow: hidden;
+    padding-bottom: 12px;
   }
 
   .hero-media::before {
-    inset: 12px -10px -12px 10px;
+    inset: 12px 0 0 0;
+    transform: translate(8px, 8px);
   }
 
   .proof-strip,

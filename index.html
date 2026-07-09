@@ -258,7 +258,8 @@ class Component extends DCLogic {
       statusMsg: this.state.statusMsg,
       onSubmit: (e) => {
         e.preventDefault();
-        this.setState({ statusMsg: "Recebido! Retornaremos no seu WhatsApp em até 24h. ✓" });
+        window.open("https://wa.me/message/BDFN72YF4GTEN1", "_blank", "noopener,noreferrer");
+        this.setState({ statusMsg: "Abrimos o WhatsApp para finalizar sua avaliação. ✓" });
       }
     };
   }

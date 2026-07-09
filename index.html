@@ -1,269 +1,266 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="pt-BR">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>MGTEAM | Saúde, estética e performance</title>
-<meta name="description" content="Acompanhamento multidisciplinar MGTEAM para saúde, estética e performance com estratégia individualizada.">
-<script src="./support.js"></script>
-<!-- Brevo Conversations -->
-<script>
-  (function(d, w, c) {
-    w.BrevoConversationsID = '6a4c31c8dc726d72b2077241';
-    w[c] = w[c] || function() {
-      (w[c].q = w[c].q || []).push(arguments);
-    };
-    var s = d.createElement('script');
-    s.async = true;
-    s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
-    if (d.head) d.head.appendChild(s);
-  })(document, window, 'BrevoConversations');
-</script>
-<!-- /Brevo Conversations -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MGTEAM | Saúde, estética e performance</title>
+  <meta name="description" content="Acompanhamento multidisciplinar MGTEAM para saúde, estética e performance com estratégia individualizada.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;600;700;800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <!-- Brevo Conversations -->
+  <script>
+    (function(d, w, c) {
+      w.BrevoConversationsID = '6a4c31c8dc726d72b2077241';
+      w[c] = w[c] || function() {
+        (w[c].q = w[c].q || []).push(arguments);
+      };
+      var s = d.createElement('script');
+      s.async = true;
+      s.src = 'https://conversations-widget.brevo.com/brevo-conversations.js';
+      if (d.head) d.head.appendChild(s);
+    })(document, window, 'BrevoConversations');
+  </script>
+  <!-- /Brevo Conversations -->
 </head>
 <body>
-<x-dc>
-<helmet>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
-<style>
-  body { margin:0; background:#F6F5F0; font-family:'Work Sans',sans-serif; color:#24332D; }
-  a { color:#24332D; text-decoration:none; }
-  a:hover { color:#5c6b62; }
-  .mg-sym path { fill: currentColor; }
-  ::selection { background:#A8CDB7; }
-  @media (max-width: 820px) {
-    header { position:relative !important; align-items:flex-start !important; flex-direction:column !important; gap:18px !important; padding:18px 22px !important; }
-    nav { flex-wrap:wrap !important; gap:14px !important; }
-    section { padding-left:22px !important; padding-right:22px !important; }
-    section[style*="grid-template-columns:1.1fr 0.9fr"],
-    div[style*="grid-template-columns:repeat(3,1fr)"],
-    div[style*="grid-template-columns:repeat(4,1fr)"],
-    div[style*="grid-template-columns:1fr 1fr"],
-    form[style*="grid-template-columns:1fr 1fr"] { grid-template-columns:1fr !important; }
-    h1 { font-size:42px !important; }
-    h2 { font-size:34px !important; }
-    form input, form button { grid-column:1 !important; }
-  }
-</style>
-</helmet>
-
-<div style="max-width:1180px; margin:0 auto; background:#F6F5F0;">
-
-  <!-- HEADER -->
-  <header style="position:sticky; top:0; z-index:20; background:rgba(246,245,240,0.9); backdrop-filter:blur(10px); border-bottom:1px solid #E4E1D8; display:flex; align-items:center; justify-content:space-between; padding:16px 40px;">
-    <div style="display:flex; align-items:center; gap:14px;">
-      <svg class="mg-sym" viewBox="0 0 877 647" style="height:30px; color:#24332D;"><path d="M876,0 L414,646 L876,644 L874,437 L748,437 L747,511 L777,513 L776,555 L589,555 L774,293 L778,334 L876,332 Z"></path><path d="M675,0 L220,646 L330,645 L680,149 Z"></path><path d="M457,0 L1,646 L114,642 L462,149 Z"></path></svg>
-      <span style="font-size:19px; font-weight:800; letter-spacing:0.14em;">MGTEAM</span>
-    </div>
-    <nav style="display:flex; align-items:center; gap:30px; font-size:14px; font-weight:600;">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="MGTEAM">
+      <svg class="brand-mark" viewBox="0 0 877 647" aria-hidden="true">
+        <path d="M876,0 L414,646 L876,644 L874,437 L748,437 L747,511 L777,513 L776,555 L589,555 L774,293 L778,334 L876,332 Z"></path>
+        <path d="M675,0 L220,646 L330,645 L680,149 Z"></path>
+        <path d="M457,0 L1,646 L114,642 L462,149 Z"></path>
+      </svg>
+      <span>MGTEAM</span>
+    </a>
+    <nav class="main-nav" aria-label="Navegação principal">
       <a href="#metodo">Método</a>
       <a href="#equipe">Equipe</a>
       <a href="#servicos">Serviços</a>
       <a href="#resultados">Resultados</a>
-      <a href="#avaliacao" style="background:#24332D; color:#F6F5F0; padding:10px 20px; letter-spacing:0.06em;">Avaliação</a>
     </nav>
+    <a class="header-cta" href="https://wa.me/message/BDFN72YF4GTEN1" target="_blank" rel="noopener">Avaliação</a>
   </header>
 
-  <!-- HERO -->
-  <section style="display:grid; grid-template-columns:1.1fr 0.9fr; gap:40px; align-items:center; padding:72px 40px 64px;">
-    <div>
-      <div style="display:flex; align-items:center; gap:14px; margin-bottom:26px;">
-        <span style="height:1px; width:44px; background:#A8CDB7;"></span>
-        <span style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#6B746D;">SAÚDE · ESTÉTICA · PERFORMANCE</span>
-      </div>
-      <h1 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:62px; line-height:1.04; margin:0;">Você treina bem. Mas seu corpo talvez esteja sendo sabotado <span style="font-style:italic; border-bottom:3px solid #A8CDB7;">fora do treino.</span></h1>
-      <p style="font-size:17px; line-height:1.7; color:#4a564f; max-width:520px; margin:28px 0 34px;">Acompanhamento multidisciplinar que une saúde, estética e performance em uma estratégia única — pensada para o seu corpo, seus exames e seus objetivos.</p>
-      <div style="display:flex; align-items:center; gap:20px;">
-        <a href="#avaliacao" style="background:#24332D; color:#F6F5F0; padding:16px 34px; font-size:15px; font-weight:800; letter-spacing:0.08em;">SOLICITAR AVALIAÇÃO</a>
-        <a href="#metodo" style="font-size:14px; font-weight:600; color:#6B746D;">Como funciona →</a>
-      </div>
-    </div>
-    <div style="position:relative;">
-      <div style="position:absolute; inset:0; background:#A8CDB7; transform:translate(18px,18px);"></div>
-      <img src="uploads/Photoroom_20260624_181038.jpeg" style="position:relative; width:100%; aspect-ratio:1; object-fit:cover; border-radius:50%; box-shadow:0 24px 60px -30px rgba(36,51,45,0.5);">
-    </div>
-  </section>
-
-  <!-- FAIXA -->
-  <div style="background:#24332D; color:#CFC9BE; display:flex; flex-wrap:wrap; justify-content:center; gap:14px 48px; padding:20px 40px; font-size:13px; font-weight:600; letter-spacing:0.1em;">
-    <span>+150 ALUNOS ACOMPANHADOS</span><span style="color:#A8CDB7;">·</span>
-    <span>EQUIPE MULTIDISCIPLINAR</span><span style="color:#A8CDB7;">·</span>
-    <span>PLANO INDIVIDUAL</span><span style="color:#A8CDB7;">·</span>
-    <span>BASEADO EM EXAMES</span>
-  </div>
-
-  <!-- METODO / PILARES -->
-  <section id="metodo" style="padding:80px 40px;">
-    <div style="text-align:center; max-width:620px; margin:0 auto 52px;">
-      <div style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#6B746D; margin-bottom:16px;">O MÉTODO MGTEAM</div>
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:42px; line-height:1.1; margin:0;">Três frentes, <span style="font-style:italic;">um só objetivo:</span> você inteiro.</h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(3,1fr); gap:24px;">
-      <div style="background:#FFFFFF; border:1px solid #E4E1D8; padding:38px 32px;">
-        <div style="font-size:13px; font-weight:800; color:#A8CDB7; letter-spacing:0.1em;">01</div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; margin:14px 0 12px;">Saúde</h3>
-        <p style="font-size:15px; line-height:1.65; color:#4a564f; margin:0;">Leitura de exames, sono, digestão e hormônios. A base que sustenta qualquer resultado estético ou físico.</p>
-      </div>
-      <div style="background:#24332D; color:#F6F5F0; padding:38px 32px;">
-        <div style="font-size:13px; font-weight:800; color:#A8CDB7; letter-spacing:0.1em;">02</div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; margin:14px 0 12px;">Estética</h3>
-        <p style="font-size:15px; line-height:1.65; color:#CFC9BE; margin:0;">Composição corporal com estratégia: menos gordura, mais forma, respeitando sua saúde e seu ritmo.</p>
-      </div>
-      <div style="background:#FFFFFF; border:1px solid #E4E1D8; padding:38px 32px;">
-        <div style="font-size:13px; font-weight:800; color:#A8CDB7; letter-spacing:0.1em;">03</div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:28px; margin:14px 0 12px;">Performance</h3>
-        <p style="font-size:15px; line-height:1.65; color:#4a564f; margin:0;">Treino ajustado à sua rotina para render mais, sentir menos dor e evoluir com consistência.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- EQUIPE -->
-  <section id="equipe" style="padding:76px 40px 84px;">
-    <div style="max-width:640px; margin:0 auto 20px; text-align:center;">
-      <div style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#6B746D; margin-bottom:16px;">QUEM CUIDA DE VOCÊ</div>
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:42px; line-height:1.1; margin:0;">Uma equipe multidisciplinar, <span style="font-style:italic;">um só objetivo.</span></h2>
-    </div>
-    <p style="text-align:center; font-size:16px; line-height:1.7; color:#4a564f; max-width:620px; margin:0 auto 48px;">Medicina, nutrição, psicologia e treino trabalhando juntos — para olhar você como um todo, não como mais um número na planilha.</p>
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px; max-width:1000px; margin:0 auto;">
-      <div style="text-align:center;">
-        <div style="width:100%; aspect-ratio:1; border-radius:50%; background-image:url('team/marcelo.png'); background-size:cover; background-position:center 14%; border:2px solid #A8CDB7;"></div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:24px; margin:18px 0 4px;">Marcelo Guerreiro</h3>
-        <div style="font-size:13px; font-weight:600; color:#4a564f;">Nutricionista e Treinador</div>
-        <div style="font-size:11px; color:#8a938c; margin-top:3px;">CRN1 25889 · CREF 017397-GO</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="width:100%; aspect-ratio:1; border-radius:50%; background-image:url('team/victor.png'); background-size:cover; background-position:center 16%; border:2px solid #A8CDB7;"></div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:24px; margin:18px 0 4px;">Victor Furbino</h3>
-        <div style="font-size:13px; font-weight:600; color:#4a564f;">Médico Clínico e do Esporte</div>
-        <div style="font-size:11px; color:#8a938c; margin-top:3px;">CRM-GO 29994</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="width:100%; aspect-ratio:1; border-radius:50%; background-image:url('team/andrea.png'); background-size:cover; background-position:center 12%; border:2px solid #A8CDB7;"></div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:24px; margin:18px 0 4px;">Andréa Aline</h3>
-        <div style="font-size:13px; font-weight:600; color:#4a564f;">Psicóloga e Psicanalista</div>
-        <div style="font-size:11px; color:#8a938c; margin-top:3px;">CRP-09/17997</div>
-      </div>
-      <div style="text-align:center;">
-        <div style="width:100%; aspect-ratio:1; border-radius:50%; background-image:url('team/carlos.png'); background-size:cover; background-position:center 12%; border:2px solid #A8CDB7;"></div>
-        <h3 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:24px; margin:18px 0 4px;">Carlos Eduardo</h3>
-        <div style="font-size:13px; font-weight:600; color:#4a564f;">Psicólogo e Psicanalista</div>
-        <div style="font-size:11px; color:#8a938c; margin-top:3px;">CRP 0920241</div>
-      </div>
-    </div>
-  </section>
-
-  <!-- SERVICOS -->
-  <section id="servicos" style="background:#EDEAE1; padding:80px 40px;">
-    <div style="max-width:620px; margin:0 auto 48px; text-align:center;">
-      <div style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#6B746D; margin-bottom:16px;">SERVIÇOS</div>
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:42px; margin:0;">Como podemos <span style="font-style:italic;">trabalhar juntos.</span></h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(2,1fr); gap:20px; max-width:900px; margin:0 auto;">
-      <div style="background:#F6F5F0; border:1px solid #E4E1D8; padding:32px; display:flex; gap:20px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#A8CDB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:34px; flex-shrink:0;"><path d="M9 11l3 3 8-8"></path><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"></path></svg>
-        <div><h3 style="font-size:19px; margin:0 0 8px;">Medicina do exercício</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Avaliação médica, leitura de exames e bio/neurofeedback com o Dr. Victor Furbino.</p></div>
-      </div>
-      <div style="background:#F6F5F0; border:1px solid #E4E1D8; padding:32px; display:flex; gap:20px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#A8CDB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:34px; flex-shrink:0;"><path d="M3 20h18"></path><rect x="5" y="11" width="3.2" height="7"></rect><rect x="10.4" y="6" width="3.2" height="12"></rect><rect x="15.8" y="9" width="3.2" height="9"></rect></svg>
-        <div><h3 style="font-size:19px; margin:0 0 8px;">Nutrição esportiva & clínica</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Hipertrofia, emagrecimento e nutrição funcional com Marcelo Guerreiro.</p></div>
-      </div>
-      <div style="background:#F6F5F0; border:1px solid #E4E1D8; padding:32px; display:flex; gap:20px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#A8CDB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:34px; flex-shrink:0;"><path d="M22 12h-4l-3 9L9 3l-3 9H2"></path></svg>
-        <div><h3 style="font-size:19px; margin:0 0 8px;">Psicologia & psicanálise</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Saúde mental, transtornos alimentares e regulação emocional com Andréa Aline e Carlos Eduardo.</p></div>
-      </div>
-      <div style="background:#F6F5F0; border:1px solid #E4E1D8; padding:32px; display:flex; gap:20px;">
-        <svg viewBox="0 0 24 24" fill="none" stroke="#A8CDB7" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" style="width:34px; flex-shrink:0;"><path d="M12 2l2.4 6.9H22l-6 4.4 2.3 7-6.3-4.6L5.7 20l2.3-7-6-4.4h7.6z"></path></svg>
-        <div><h3 style="font-size:19px; margin:0 0 8px;">Treino & performance</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Programação de treino para render mais, sentir menos dor e evoluir com consistência.</p></div>
-      </div>
-    </div>
-  </section>
-
-  <!-- RESULTADOS -->
-  <section id="resultados" style="background:#24332D; color:#F6F5F0; padding:80px 40px;">
-    <div style="max-width:620px; margin:0 auto 52px; text-align:center;">
-      <div style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#A8CDB7; margin-bottom:16px;">RESULTADOS QUE FALAM</div>
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:42px; margin:0;">Números de quem <span style="font-style:italic; color:#A8CDB7;">confiou no processo.</span></h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:20px;">
-      <div style="border-top:2px solid #A8CDB7; padding-top:20px;"><div style="font-size:44px; font-weight:800;">−8kg</div><div style="font-size:13px; color:#CFC9BE; margin-top:6px;">de gordura corporal</div></div>
-      <div style="border-top:2px solid #A8CDB7; padding-top:20px;"><div style="font-size:44px; font-weight:800;">+22kg</div><div style="font-size:13px; color:#CFC9BE; margin-top:6px;">no supino em 3 meses</div></div>
-      <div style="border-top:2px solid #A8CDB7; padding-top:20px;"><div style="font-size:44px; font-weight:800;">5.2</div><div style="font-size:13px; color:#CFC9BE; margin-top:6px;">HbA1c · controle glicêmico</div></div>
-      <div style="border-top:2px solid #A8CDB7; padding-top:20px;"><div style="font-size:44px; font-weight:800;">0 dor</div><div style="font-size:13px; color:#CFC9BE; margin-top:6px;">retorno pleno ao treino</div></div>
-    </div>
-    <blockquote style="font-family:'Instrument Serif',serif; font-style:italic; font-size:26px; line-height:1.4; text-align:center; max-width:760px; margin:60px auto 0; color:#F6F5F0;">"Pela primeira vez entendi o que estava travando meu resultado. Mudou o jogo."<div style="font-family:'Work Sans',sans-serif; font-style:normal; font-size:13px; letter-spacing:0.1em; color:#A8CDB7; margin-top:18px;">— ALUNO MGTEAM</div></blockquote>
-  </section>
-
-  <!-- PROCESSO -->
-  <section style="padding:80px 40px;">
-    <div style="max-width:620px; margin:0 auto 52px; text-align:center;">
-      <div style="font-size:12px; font-weight:700; letter-spacing:0.3em; color:#6B746D; margin-bottom:16px;">COMO COMEÇAR</div>
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:42px; margin:0;">Quatro passos <span style="font-style:italic;">até o seu plano.</span></h2>
-    </div>
-    <div style="display:grid; grid-template-columns:repeat(4,1fr); gap:24px;">
-      <div><div style="font-size:13px; font-weight:800; color:#A8CDB7;">01</div><h3 style="font-size:18px; margin:12px 0 8px;">Avaliação</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Você preenche o formulário e conta seus objetivos.</p></div>
-      <div><div style="font-size:13px; font-weight:800; color:#A8CDB7;">02</div><h3 style="font-size:18px; margin:12px 0 8px;">Diagnóstico</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Analisamos rotina, exames e histórico juntos.</p></div>
-      <div><div style="font-size:13px; font-weight:800; color:#A8CDB7;">03</div><h3 style="font-size:18px; margin:12px 0 8px;">Estratégia</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Montamos seu plano individual de saúde e treino.</p></div>
-      <div><div style="font-size:13px; font-weight:800; color:#A8CDB7;">04</div><h3 style="font-size:18px; margin:12px 0 8px;">Evolução</h3><p style="font-size:14px; line-height:1.6; color:#4a564f; margin:0;">Acompanhamento contínuo com ajustes por resultado.</p></div>
-    </div>
-  </section>
-
-  <!-- CTA / FORM -->
-  <section id="avaliacao" style="background:#A8CDB7; padding:76px 40px;">
-    <div style="max-width:760px; margin:0 auto; text-align:center;">
-      <h2 style="font-family:'Instrument Serif',serif; font-weight:400; font-size:46px; line-height:1.08; margin:0 0 16px; color:#24332D;">Pronto para tratar seu corpo <span style="font-style:italic;">por inteiro?</span></h2>
-      <p style="font-size:16px; color:#2e3d36; margin:0 0 36px;">Solicite sua avaliação. Retornamos em até 24h com os próximos passos.</p>
-      <form onsubmit="{{ onSubmit }}" style="display:grid; grid-template-columns:1fr 1fr; gap:14px; max-width:560px; margin:0 auto; text-align:left;">
-        <input name="nome" required placeholder="Seu nome" style="grid-column:1/3; padding:15px 16px; border:1px solid #24332D; background:#F6F5F0; font-size:15px; font-family:inherit; color:#24332D;">
-        <input name="whatsapp" required placeholder="WhatsApp" style="padding:15px 16px; border:1px solid #24332D; background:#F6F5F0; font-size:15px; font-family:inherit; color:#24332D;">
-        <input name="objetivo" required placeholder="Seu objetivo" style="padding:15px 16px; border:1px solid #24332D; background:#F6F5F0; font-size:15px; font-family:inherit; color:#24332D;">
-        <button type="submit" style="grid-column:1/3; background:#24332D; color:#F6F5F0; border:none; padding:17px; font-size:15px; font-weight:800; letter-spacing:0.08em; cursor:pointer; font-family:inherit;">QUERO MINHA AVALIAÇÃO</button>
-      </form>
-      <div style="font-size:13px; color:#2e3d36; margin-top:18px;">{{ statusMsg }}</div>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer style="background:#24332D; color:#CFC9BE; padding:52px 40px 40px;">
-    <div style="display:flex; flex-wrap:wrap; gap:30px; justify-content:space-between; align-items:flex-start;">
-      <div style="display:flex; align-items:center; gap:14px;">
-        <svg class="mg-sym" viewBox="0 0 877 647" style="height:34px; color:#F6F5F0;"><path d="M876,0 L414,646 L876,644 L874,437 L748,437 L747,511 L777,513 L776,555 L589,555 L774,293 L778,334 L876,332 Z"></path><path d="M675,0 L220,646 L330,645 L680,149 Z"></path><path d="M457,0 L1,646 L114,642 L462,149 Z"></path></svg>
-        <div><div style="font-size:18px; font-weight:800; letter-spacing:0.14em; color:#F6F5F0;">MGTEAM</div><div style="font-size:10px; font-weight:600; letter-spacing:0.24em; color:#A8CDB7;">SAÚDE · ESTÉTICA · PERFORMANCE</div></div>
-      </div>
-      <div style="display:flex; gap:48px; font-size:14px;">
-        <div style="display:flex; flex-direction:column; gap:10px;">
-          <span style="font-weight:700; color:#F6F5F0;">Redes</span>
-          <a href="https://instagram.com/mgteamoficial" style="color:#CFC9BE;">@mgteamoficial</a>
-          <a href="https://instagram.com/omarceloguerreiro" style="color:#CFC9BE;">@omarceloguerreiro</a>
+  <main id="top">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Saúde · Estética · Performance</p>
+          <h1>Você treina bem. Mas seu corpo talvez esteja sendo sabotado fora do treino.</h1>
+          <p class="hero-lede">Acompanhamento multidisciplinar que une saúde, estética e performance em uma estratégia única, pensada para seu corpo, seus exames e seus objetivos.</p>
+          <div class="action-row">
+            <a class="button button-dark" href="https://wa.me/message/BDFN72YF4GTEN1" target="_blank" rel="noopener">Quero minha avaliação</a>
+            <a class="button button-soft" href="#metodo">Como funciona</a>
+          </div>
         </div>
-        <div style="display:flex; flex-direction:column; gap:10px;">
-          <span style="font-weight:700; color:#F6F5F0;">Navegação</span>
-          <a href="#metodo" style="color:#CFC9BE;">Método</a>
-          <a href="#servicos" style="color:#CFC9BE;">Serviços</a>
-          <a href="#avaliacao" style="color:#CFC9BE;">Avaliação</a>
+        <div class="hero-media" aria-label="Equipe MGTEAM">
+          <img src="uploads/Photoroom_20260624_181038.jpeg" alt="Profissional da equipe MGTEAM">
         </div>
       </div>
+    </section>
+
+    <section class="proof-strip" aria-label="Destaques MGTEAM">
+      <span>+150 alunos acompanhados</span>
+      <span>Equipe multidisciplinar</span>
+      <span>Plano individual</span>
+      <span>Baseado em exames</span>
+    </section>
+
+    <section id="metodo" class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">O método MGTEAM</p>
+          <h2>Três frentes, um só objetivo: você inteiro.</h2>
+        </div>
+        <div class="pillar-grid">
+          <article class="pillar-card">
+            <span>01</span>
+            <h3>Saúde</h3>
+            <p>Leitura de exames, sono, digestão e hormônios. A base que sustenta qualquer resultado estético ou físico.</p>
+          </article>
+          <article class="pillar-card pillar-card-dark">
+            <span>02</span>
+            <h3>Estética</h3>
+            <p>Composição corporal com estratégia: menos gordura, mais forma, respeitando sua saúde e seu ritmo.</p>
+          </article>
+          <article class="pillar-card">
+            <span>03</span>
+            <h3>Performance</h3>
+            <p>Treino ajustado à sua rotina para render mais, sentir menos dor e evoluir com consistência.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="equipe" class="section-pad team-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Quem cuida de você</p>
+          <h2>Uma equipe multidisciplinar, um só objetivo.</h2>
+          <p>Medicina, nutrição, psicologia e treino trabalhando juntos para olhar você como um todo, não como mais um número na planilha.</p>
+        </div>
+        <div class="team-grid">
+          <article class="team-card">
+            <img src="team/marcelo.png" alt="Marcelo Guerreiro">
+            <h3>Marcelo Guerreiro</h3>
+            <p>Nutricionista e Treinador</p>
+            <span>CRN1 25889 · CREF 017397-GO</span>
+          </article>
+          <article class="team-card">
+            <img src="team/victor.png" alt="Victor Furbino">
+            <h3>Victor Furbino</h3>
+            <p>Médico Clínico e do Esporte</p>
+            <span>CRM-GO 29994</span>
+          </article>
+          <article class="team-card">
+            <img src="team/andrea.png" alt="Andréa Aline">
+            <h3>Andréa Aline</h3>
+            <p>Psicóloga e Psicanalista</p>
+            <span>CRP-09/17997</span>
+          </article>
+          <article class="team-card">
+            <img src="team/carlos.png" alt="Carlos Eduardo">
+            <h3>Carlos Eduardo</h3>
+            <p>Psicólogo e Psicanalista</p>
+            <span>CRP 0920241</span>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicos" class="section-pad services-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Serviços</p>
+          <h2>Como podemos trabalhar juntos.</h2>
+        </div>
+        <div class="service-grid">
+          <article class="service-card">
+            <span class="service-icon">01</span>
+            <div>
+              <h3>Medicina do exercício</h3>
+              <p>Avaliação médica, leitura de exames e bio/neurofeedback com o Dr. Victor Furbino.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">02</span>
+            <div>
+              <h3>Nutrição esportiva & clínica</h3>
+              <p>Hipertrofia, emagrecimento e nutrição funcional com Marcelo Guerreiro.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">03</span>
+            <div>
+              <h3>Psicologia & psicanálise</h3>
+              <p>Saúde mental, transtornos alimentares e regulação emocional com Andréa Aline e Carlos Eduardo.</p>
+            </div>
+          </article>
+          <article class="service-card">
+            <span class="service-icon">04</span>
+            <div>
+              <h3>Treino & performance</h3>
+              <p>Programação de treino para render mais, sentir menos dor e evoluir com consistência.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="resultados" class="section-pad results-section">
+      <div class="container">
+        <div class="section-heading section-heading-light">
+          <p class="eyebrow">Resultados que falam</p>
+          <h2>Números de quem confiou no processo.</h2>
+        </div>
+        <div class="results-grid">
+          <article>
+            <strong>-8kg</strong>
+            <span>de gordura corporal</span>
+          </article>
+          <article>
+            <strong>+22kg</strong>
+            <span>no supino em 3 meses</span>
+          </article>
+          <article>
+            <strong>5.2</strong>
+            <span>HbA1c · controle glicêmico</span>
+          </article>
+          <article>
+            <strong>0 dor</strong>
+            <span>retorno pleno ao treino</span>
+          </article>
+        </div>
+        <blockquote>
+          "Pela primeira vez entendi o que estava travando meu resultado. Mudou o jogo."
+          <cite>Aluno MGTEAM</cite>
+        </blockquote>
+      </div>
+    </section>
+
+    <section class="section-pad">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Como começar</p>
+          <h2>Quatro passos até o seu plano.</h2>
+        </div>
+        <div class="steps-grid">
+          <article>
+            <span>01</span>
+            <h3>Avaliação</h3>
+            <p>Você conta seus objetivos e entendemos seu ponto de partida.</p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Diagnóstico</h3>
+            <p>Analisamos rotina, exames, histórico e desafios reais.</p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Estratégia</h3>
+            <p>Montamos seu plano individual de saúde, nutrição e treino.</p>
+          </article>
+          <article>
+            <span>04</span>
+            <h3>Evolução</h3>
+            <p>Acompanhamento contínuo com ajustes guiados por resultado.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="avaliacao" class="cta-section">
+      <div class="container cta-box">
+        <p class="eyebrow">Avaliação MGTEAM</p>
+        <h2>Pronto para tratar seu corpo por inteiro?</h2>
+        <p>Toque no botão e fale com a equipe pelo WhatsApp para receber os próximos passos.</p>
+        <a class="button button-dark" href="https://wa.me/message/BDFN72YF4GTEN1" target="_blank" rel="noopener">Quero minha avaliação</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <svg class="brand-mark" viewBox="0 0 877 647" aria-hidden="true">
+          <path d="M876,0 L414,646 L876,644 L874,437 L748,437 L747,511 L777,513 L776,555 L589,555 L774,293 L778,334 L876,332 Z"></path>
+          <path d="M675,0 L220,646 L330,645 L680,149 Z"></path>
+          <path d="M457,0 L1,646 L114,642 L462,149 Z"></path>
+        </svg>
+        <div>
+          <strong>MGTEAM</strong>
+          <span>Saúde · Estética · Performance</span>
+        </div>
+      </div>
+      <div class="footer-links">
+        <a href="https://instagram.com/mgteamoficial" target="_blank" rel="noopener">@mgteamoficial</a>
+        <a href="https://instagram.com/omarceloguerreiro" target="_blank" rel="noopener">@omarceloguerreiro</a>
+        <a href="https://wa.me/message/BDFN72YF4GTEN1" target="_blank" rel="noopener">WhatsApp</a>
+      </div>
     </div>
-    <div style="border-top:1px solid rgba(207,201,190,0.2); margin-top:36px; padding-top:20px; font-size:12px; color:#8a9389;">© 2026 MGTEAM · Todos os direitos reservados</div>
+    <div class="container copyright">© 2026 MGTEAM · Todos os direitos reservados</div>
   </footer>
-
-</div>
-</x-dc>
-<script type="text/x-dc" data-dc-script>
-class Component extends DCLogic {
-  state = { statusMsg: "" };
-  renderVals() {
-    return {
-      statusMsg: this.state.statusMsg,
-      onSubmit: (e) => {
-        e.preventDefault();
-        window.open("https://wa.me/message/BDFN72YF4GTEN1", "_blank", "noopener,noreferrer");
-        this.setState({ statusMsg: "Abrimos o WhatsApp para finalizar sua avaliação. ✓" });
-      }
-    };
-  }
-}
-</script>
 </body>
 </html>

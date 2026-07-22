@@ -505,6 +505,10 @@ cite {
   color: #32443b;
 }
 
+.cta-actions {
+  justify-content: center;
+}
+
 .site-footer {
   background: var(--ink);
   color: #d6d1c6;

@@ -476,6 +476,11 @@ cite {
   text-transform: uppercase;
 }
 
+.results-actions {
+  justify-content: center;
+  margin-top: 32px;
+}
+
 .steps-grid {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
